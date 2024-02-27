@@ -3,7 +3,7 @@ package Pekan2;
 public class Buku15 {
     
     String judul, pengarang;
-    int halaman, stok, harga;
+    int halaman, stok, harga, hrgDiskon, hrgTotal;
 
     public Buku15() {
 
@@ -41,25 +41,27 @@ public class Buku15 {
         harga = hrg;
     }
 
-    int hitungHargaTotal() {
-        int hrgTotal = harga * stok;
+    int hitungHargaTotal(int jml) {
+        hrgTotal = harga * jml;
+        System.out.println("Harga total: " + hrgTotal);
 
         return hrgTotal;
     }
 
-    int hitungDiskon(int hrgTotal) {
+    void hitungDiskon() {
         if (hrgTotal > 150000) {
-            hrgTotal *= 0.12;
+            hrgDiskon = 12;
         } else if (hrgTotal > 75000 && hrgTotal < 150000) {
-            hrgTotal *= 0.05;
+            hrgDiskon = 5;
+        } else {
+            hrgDiskon = 0;
         }
 
-        return hrgTotal;
     }
 
-    void hitungHargaBayar(int hrgBayar) {
-        int hrgTotal = hrgBayar;
-        int diskon = hitungDiskon(hrgTotal);
-        hrgTotal -= diskon;
+    void hitungHargaBayar() {
+        int total = hrgTotal - (hrgTotal * hrgDiskon / 100);
+        System.out.println("Harga Bayar: " + total);
+
     }
 }
