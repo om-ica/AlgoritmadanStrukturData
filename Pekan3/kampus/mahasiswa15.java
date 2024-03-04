@@ -7,10 +7,10 @@ public class mahasiswa15 {
     public float ipk;
 
     void tampilInformasi() {
-        System.out.println("Nama\t: " + nama);
-        System.out.println("NIM\t: " + nim);
-        System.out.println("Kelamin\t: " + kelamin);
-        System.out.println("IPK\t: " + ipk);
+        System.out.println("\nNama\t\t: " + nama);
+        System.out.println("NIM\t\t: " + nim);
+        System.out.println("Kelamin\t\t: " + kelamin);
+        System.out.println("IPK\t\t: " + ipk);
     }
 
     public static float hitungRerata(mahasiswa15[] mhs) {

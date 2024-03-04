@@ -11,7 +11,7 @@ public class kerucut15 {
     }
 
     double hitungLuasPermukaanKerucut() {
-        return Math.PI * jari * sisiMiring * (Math.PI * jari * jari);
+        return (Math.PI * jari * jari) + (Math.PI * jari * sisiMiring);
     }
 
     double hitungVolumeKerucut() {

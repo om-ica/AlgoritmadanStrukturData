@@ -25,11 +25,7 @@ public class mahasiswaMain15 {
         System.out.println("\n=============================");
 
         for (int i = 0; i < mhs.length; i++) {
-            System.out.println("\nData mahasiswa ke-" + (i+1));
-            System.out.println("Nama\t: " + mhs[i].nama);
-            System.out.println("NIM\t: " + mhs[i].nim);
-            System.out.println("Kelamin\t: " + mhs[i].kelamin);
-            System.out.println("IPK\t: " + mhs[i].ipk);
+            mhs[i].tampilInformasi();
         }
 
         System.out.println("\n=============================");
