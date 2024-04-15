@@ -6,7 +6,7 @@ public class menghitungMain15 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Pilihan bangun\t\t: 1. Kerucut, 2. Limas, 3. Bola");
+        System.out.println("Pilihan bangun\t\t: \n1. Kerucut \n2. Limas \n3. Bola");
         System.out.print("Pilih bangun(1/2/3)\t: ");
         int pilihan = sc.nextInt();
         System.out.print("Berapa kali menghitung\t: ");
